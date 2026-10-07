@@ -21,7 +21,7 @@ const SCREEN_DATA = {
       techSpecs: {
         "Platform": "PetEase",
         "Target Viewport": "390px Mobile Viewport",
-        "Palette": "Emerald Green (#059669), Mint Accent (#D1FAE5), Charcoal (#0F172A)",
+        "Palette": "Sea Breeze: Dark Teal (#00796B), Main Teal (#4DB6AC), Soft Secondary (#B2EBE2), Light BG (#E0F7FA), Dark Text (#023047)",
         "Stitch Model": "Gemini 3.8 Flash (Project: 14068042419867567264)"
       }
     },
