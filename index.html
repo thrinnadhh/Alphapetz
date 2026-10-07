@@ -25,99 +25,234 @@
 
   <!-- Main Navigation Header -->
   <header class="app-header">
-    <div class="header-container">
-      
-      <!-- Brand Logo -->
-      <a href="#home" class="brand-group" id="brandHomeLink">
-        <div class="brand-logo">🐾</div>
-        <div>
-          <h1 class="brand-title">Alphapetz</h1>
-          <span class="brand-badge">Pet Clinic & E-Commerce 🌊</span>
-        </div>
-      </a>
-
-      <!-- Instant Live Search Bar -->
-      <div class="search-container">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" placeholder="Search Royal Canin, vaccines, shampoos, supplements..." aria-label="Search products and medicines">
-        <button id="clearSearchBtn" class="clear-search-btn" title="Clear Search">✕</button>
-      </div>
-
-      <!-- Main Navigation Links -->
-      <nav class="portal-nav" id="mainNav">
-        <button class="nav-btn active" data-target="storeSection">
-          <span class="icon">🏪</span>
-          <span>Shop Store</span>
-        </button>
-        <button class="nav-btn" data-target="vetBookingSection">
-          <span class="icon">🩺</span>
-          <span>Book Vet</span>
-        </button>
-        <button class="nav-btn" data-target="groomingSection">
-          <span class="icon">✂️</span>
-          <span>Grooming Spa 🩷</span>
-        </button>
-        <button class="nav-btn" data-target="passportSection">
-          <span class="icon">🐶</span>
-          <span>Pet Passport</span>
-        </button>
-      </nav>
-
-      <!-- User & Cart Header Actions -->
-      <div class="header-actions">
-        <!-- Active Pet Profile Chip -->
-        <div class="pet-pill" id="petProfileBtn" title="Current Active Pet Profile">
-          <span class="pet-avatar">🐕</span>
-          <div class="pet-pill-info">
-            <span class="pet-name">Bruno</span>
-            <span class="pet-meta">Labrador • 28.4 kg</span>
+    <div class="header-main-row">
+      <div class="header-container">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="brand-group" id="brandHomeLink">
+          <div class="brand-logo">🐾</div>
+          <div>
+            <h1 class="brand-title">Alphapetz</h1>
+            <span class="brand-badge">Pet Clinic & E-Commerce 🌊</span>
           </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="portal-nav" id="mainNav">
+          <button class="nav-btn active" data-target="storeSection">
+            <span class="icon">🏪</span>
+            <span>Shop Store</span>
+          </button>
+          <button class="nav-btn" data-target="vetBookingSection">
+            <span class="icon">🩺</span>
+            <span>Book Vet</span>
+          </button>
+          <button class="nav-btn" data-target="groomingSection">
+            <span class="icon">✂️</span>
+            <span>Grooming Spa 🩷</span>
+          </button>
+          <button class="nav-btn" data-target="passportSection">
+            <span class="icon">🐶</span>
+            <span>Pet Passport</span>
+          </button>
+        </nav>
+
+        <!-- User & Cart Header Actions -->
+        <div class="header-actions">
+          <!-- Active Pet Profile Chip -->
+          <div class="pet-pill" id="petProfileBtn" title="Current Active Pet Profile">
+            <span class="pet-avatar">🐕</span>
+            <div class="pet-pill-info">
+              <span class="pet-name">Bruno</span>
+              <span class="pet-meta">Labrador • 28.4 kg</span>
+            </div>
+          </div>
+
+          <!-- Floating Cart Trigger -->
+          <button class="cart-btn" id="openCartBtn" aria-label="Open Shopping Cart">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-title">Cart</span>
+            <span class="cart-count" id="cartCountBadge">0</span>
+            <span class="cart-total-pill" id="cartTotalHeader">₹0</span>
+          </button>
         </div>
 
-        <!-- Floating Cart Trigger -->
-        <button class="cart-btn" id="openCartBtn" aria-label="Open Shopping Cart">
-          <span class="cart-icon">🛒</span>
-          <span class="cart-title">Cart</span>
-          <span class="cart-count" id="cartCountBadge">0</span>
-          <span class="cart-total-pill" id="cartTotalHeader">₹0</span>
-        </button>
       </div>
+    </div>
 
+    <!-- Prominent Dedicated Search Bar Row (Full Width on Mobile & Center on Desktop) -->
+    <div class="header-search-row">
+      <div class="search-row-container">
+        <div class="search-container">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search Royal Canin, vaccines, shampoos, supplements..." aria-label="Search products and medicines">
+          <button id="clearSearchBtn" class="clear-search-btn" title="Clear Search">✕</button>
+        </div>
+        
+        <div class="trending-tags-row">
+          <span class="trending-label">Popular:</span>
+          <button class="tag-chip" data-search="Royal Canin">Royal Canin</button>
+          <button class="tag-chip" data-search="NexGard">NexGard</button>
+          <button class="tag-chip" data-search="Shampoo">Chlorhexidine 🩷</button>
+          <button class="tag-chip" data-search="Vaccine">Anti-Rabies 💉</button>
+          <button class="tag-chip" data-search="Farmina">Farmina N&D</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- Main Store Layout -->
   <main class="main-content" id="home">
 
-    <!-- Promotional Hero & Fast Emergency Triage Banner -->
-    <section class="hero-banner">
-      <div class="hero-container">
-        
-        <div class="hero-text-block">
-          <div class="hero-badge">
-            <span class="pulse-dot"></span>
-            <span>45-Min Express Delivery via Rapido • Tirupati Hub</span>
-          </div>
-          <h2 class="hero-title">Medical Trust & Hyperlocal Care for Your Pets.</h2>
-          <p class="hero-subtitle">Prescription pet diets, verified vaccines, life-saving veterinary pharmacy, and stress-free clinic appointments curated by licensed veterinary surgeons.</p>
+    <!-- PROMOTIONAL HERO BANNERS CAROUSEL -->
+    <section class="banner-carousel-section" aria-label="Promotional Banners">
+      <div class="carousel-wrapper">
+        <div class="banner-slider" id="bannerSlider">
           
-          <div class="hero-cta-group">
-            <a href="#storeSection" class="btn-primary">Shop Food & Pharmacy ↓</a>
-            <a href="#vetBookingSection" class="btn-secondary">Book Vet Consultation (₹499) 🩺</a>
+          <!-- Slide 1: Grand Offer -->
+          <div class="banner-slide slide-1 active">
+            <div class="slide-content">
+              <div class="slide-badge">🎉 SPECIAL CLINIC & STORE LAUNCH</div>
+              <h2 class="slide-title">Flat 20% OFF On First Vet Consult & Diet</h2>
+              <p class="slide-desc">Use coupon <strong>SEABREEZE</strong> at checkout. Doctor-formulated nutrition and compassionate clinical diagnostics in Tirupati.</p>
+              <div class="slide-cta-row">
+                <a href="#storeSection" class="btn-slide-cta">Shop Offers Now →</a>
+                <span class="slide-coupon-pill">Code: <strong>SEABREEZE</strong></span>
+              </div>
+            </div>
+            <div class="slide-visual">
+              <div class="visual-badge-circle">🐾<br><span>20% OFF</span></div>
+            </div>
           </div>
 
-          <div class="hero-trust-metrics">
-            <div class="trust-item">
-              <span class="trust-num">100%</span>
-              <span class="trust-label">Authentic Vet Pharmacy</span>
+          <!-- Slide 2: 45-Min Express Delivery -->
+          <div class="banner-slide slide-2">
+            <div class="slide-content">
+              <div class="slide-badge">⚡ RAPIDO FLEET DISPATCH</div>
+              <h2 class="slide-title">Emergency Medicines & Diets in 45 Minutes</h2>
+              <p class="slide-desc">Direct dispatch from KT Road Animal Health Hub. Free express shipping on all orders over ₹499.</p>
+              <div class="slide-cta-row">
+                <a href="#storeSection" class="btn-slide-cta">Order Express Essentials →</a>
+                <span class="slide-tag">⏱ Live GPS Telemetry</span>
+              </div>
             </div>
-            <div class="trust-item">
-              <span class="trust-num">45 Min</span>
-              <span class="trust-label">Average Delivery Time</span>
+            <div class="slide-visual">
+              <div class="visual-badge-circle">🛵<br><span>45 MIN</span></div>
             </div>
-            <div class="trust-item">
-              <span class="trust-num">4.9 ★</span>
-              <span class="trust-label">3,400+ Happy Pet Parents</span>
+          </div>
+
+          <!-- Slide 3: Paws & Bubbles Grooming Spa -->
+          <div class="banner-slide slide-3">
+            <div class="slide-content">
+              <div class="slide-badge">🩷 PAWS & BUBBLES SPA</div>
+              <h2 class="slide-title">Stress-Free Grooming & Antifungal Therapy</h2>
+              <p class="slide-desc">Warm hydrotherapy baths, sanitary trims, and prescription Chlorhexidine skin soaks by certified groomers.</p>
+              <div class="slide-cta-row">
+                <a href="#groomingSection" class="btn-slide-cta">Book Spa Session (₹699) →</a>
+                <span class="slide-tag">Fear-Free Certified</span>
+              </div>
+            </div>
+            <div class="slide-visual">
+              <div class="visual-badge-circle">🫧<br><span>SPA 🩷</span></div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Vaccine Immunity Drive -->
+          <div class="banner-slide slide-4">
+            <div class="slide-content">
+              <div class="slide-badge">💉 VACCINATION IMMUNITY DRIVE</div>
+              <h2 class="slide-title">Annual Anti-Rabies & 7-in-1 Combined Boosters</h2>
+              <p class="slide-desc">Protect Bruno's health compliance. Includes a verified digital pet passport vaccination certificate.</p>
+              <div class="slide-cta-row">
+                <a href="#vetBookingSection" class="btn-slide-cta">Schedule Booster Slot (₹299) →</a>
+                <span class="slide-tag">Official Health Card</span>
+              </div>
+            </div>
+            <div class="slide-visual">
+              <div class="visual-badge-circle">🛡️<br><span>IMMUNITY</span></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <button class="carousel-arrow prev" id="bannerPrevBtn" aria-label="Previous Slide">‹</button>
+        <button class="carousel-arrow next" id="bannerNextBtn" aria-label="Next Slide">›</button>
+
+        <!-- Carousel Indicator Dots -->
+        <div class="carousel-dots" id="carouselDots">
+          <button class="dot-btn active" data-index="0" aria-label="Slide 1"></button>
+          <button class="dot-btn" data-index="1" aria-label="Slide 2"></button>
+          <button class="dot-btn" data-index="2" aria-label="Slide 3"></button>
+          <button class="dot-btn" data-index="3" aria-label="Slide 4"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CATEGORIES & SERVICES ACTION RAIL -->
+    <section class="quick-services-rail" aria-label="Quick Category Shortcuts">
+      <div class="quick-rail-container">
+        
+        <div class="quick-category-item" data-category="dog-food">
+          <div class="category-icon-bubble">🍖</div>
+          <span class="category-bubble-title">Dog Food</span>
+        </div>
+
+        <div class="quick-category-item" data-category="cat-food">
+          <div class="category-icon-bubble">🐱</div>
+          <span class="category-bubble-title">Cat Food</span>
+        </div>
+
+        <div class="quick-category-item" data-category="pharmacy">
+          <div class="category-icon-bubble">💊</div>
+          <span class="category-bubble-title">Vet Rx</span>
+        </div>
+
+        <div class="quick-category-item" data-action="scroll-grooming">
+          <div class="category-icon-bubble grooming-bubble">🩷</div>
+          <span class="category-bubble-title">Grooming Spa</span>
+        </div>
+
+        <div class="quick-category-item" data-action="scroll-vet">
+          <div class="category-icon-bubble">🩺</div>
+          <span class="category-bubble-title">Book Doctor</span>
+        </div>
+
+        <div class="quick-category-item" data-action="scroll-passport">
+          <div class="category-icon-bubble">🐶</div>
+          <span class="category-bubble-title">Pet Passport</span>
+        </div>
+
+        <div class="quick-category-item" data-action="call-er">
+          <div class="category-icon-bubble er-bubble">🚨</div>
+          <span class="category-bubble-title">24/7 ER</span>
+        </div>
+
+      </div>
+    <!-- TRUST STATS & PET IMMUNITY ALERT -->
+    <section class="trust-and-alert-section" aria-label="Clinic Trust and Pet Alerts">
+      <div class="trust-alert-container">
+        
+        <div class="trust-bar-card">
+          <div class="trust-item">
+            <span class="trust-icon">🛡️</span>
+            <div>
+              <span class="trust-num">100% Authentic</span>
+              <span class="trust-label">Licensed Tirupati Vet Pharmacy</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">⚡</span>
+            <div>
+              <span class="trust-num">45-Min Express</span>
+              <span class="trust-label">Rapido Fleet Direct Dispatch</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">⭐</span>
+            <div>
+              <span class="trust-num">4.9 / 5.0 Rating</span>
+              <span class="trust-label">3,400+ Verified Pet Parents</span>
             </div>
           </div>
         </div>

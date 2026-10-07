@@ -733,6 +733,140 @@ function setupEventListeners() {
     });
   });
 
+  // Promotional Banner Carousel Controller
+  const bannerSlider = document.getElementById("bannerSlider");
+  const bannerPrevBtn = document.getElementById("bannerPrevBtn");
+  const bannerNextBtn = document.getElementById("bannerNextBtn");
+  const dotBtns = document.querySelectorAll("#carouselDots .dot-btn");
+  const bannerSlides = document.querySelectorAll(".banner-slide");
+  const totalSlides = bannerSlides.length || 4;
+  let currentSlide = 0;
+  let bannerTimer = null;
+
+  function updateSlide(index) {
+    currentSlide = (index + totalSlides) % totalSlides;
+    if (bannerSlider) {
+      bannerSlider.style.transform = `translateX(-${(currentSlide * 100) / totalSlides}%)`;
+    }
+    bannerSlides.forEach((s, i) => {
+      s.classList.toggle("active", i === currentSlide);
+    });
+    dotBtns.forEach((dot, i) => {
+      dot.classList.toggle("active", i === currentSlide);
+    });
+  }
+
+  function startBannerAutoSlide() {
+    stopBannerAutoSlide();
+    bannerTimer = setInterval(() => {
+      updateSlide(currentSlide + 1);
+    }, 4800);
+  }
+
+  function stopBannerAutoSlide() {
+    if (bannerTimer) {
+      clearInterval(bannerTimer);
+      bannerTimer = null;
+    }
+  }
+
+  if (bannerPrevBtn && bannerNextBtn) {
+    bannerPrevBtn.addEventListener("click", () => {
+      updateSlide(currentSlide - 1);
+      startBannerAutoSlide();
+    });
+    bannerNextBtn.addEventListener("click", () => {
+      updateSlide(currentSlide + 1);
+      startBannerAutoSlide();
+    });
+  }
+
+  dotBtns.forEach(dot => {
+    dot.addEventListener("click", () => {
+      const idx = parseInt(dot.dataset.index, 10);
+      updateSlide(idx);
+      startBannerAutoSlide();
+    });
+  });
+
+  if (bannerSlider) {
+    const wrapper = bannerSlider.closest(".carousel-wrapper");
+    if (wrapper) {
+      wrapper.addEventListener("mouseenter", stopBannerAutoSlide);
+      wrapper.addEventListener("mouseleave", startBannerAutoSlide);
+    }
+
+    // Touch swipe support on mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    bannerSlider.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      stopBannerAutoSlide();
+    }, { passive: true });
+
+    bannerSlider.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 45) {
+        // Swiped left -> next
+        updateSlide(currentSlide + 1);
+      } else if (touchEndX - touchStartX > 45) {
+        // Swiped right -> prev
+        updateSlide(currentSlide - 1);
+      }
+      startBannerAutoSlide();
+    }, { passive: true });
+  }
+
+  startBannerAutoSlide();
+
+  // Trending Tag Chips in Search Bar Row
+  document.querySelectorAll(".trending-tags-row .tag-chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      const query = chip.dataset.search || chip.textContent.trim();
+      searchInput.value = query;
+      state.searchQuery = query;
+      clearSearchBtn.style.display = "block";
+      updateFilterStatusRow();
+      renderProducts();
+      const storeSection = document.getElementById("storeSection");
+      if (storeSection) {
+        storeSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // Quick Services & Categories Action Rail
+  document.querySelectorAll(".quick-category-item").forEach(item => {
+    item.addEventListener("click", () => {
+      const category = item.dataset.category;
+      const action = item.dataset.action;
+
+      if (category) {
+        state.activeCategory = category;
+        state.searchQuery = "";
+        searchInput.value = "";
+        clearSearchBtn.style.display = "none";
+        document.querySelectorAll(".filter-chip").forEach(c => {
+          c.classList.toggle("active", c.dataset.category === category);
+        });
+        updateFilterStatusRow();
+        renderProducts();
+        const storeSection = document.getElementById("storeSection");
+        if (storeSection) {
+          storeSection.scrollIntoView({ behavior: "smooth" });
+        }
+      } else if (action === "scroll-grooming") {
+        document.getElementById("groomingSection")?.scrollIntoView({ behavior: "smooth" });
+      } else if (action === "scroll-vet") {
+        document.getElementById("vetBookingSection")?.scrollIntoView({ behavior: "smooth" });
+      } else if (action === "scroll-passport") {
+        document.getElementById("passportSection")?.scrollIntoView({ behavior: "smooth" });
+      } else if (action === "call-er") {
+        window.location.href = "tel:+919849073877";
+      }
+    });
+  });
+
   // Edit Vitals Button
   const editVitalsBtn = document.getElementById("editVitalsBtn");
   if (editVitalsBtn) {
