@@ -6,6 +6,11 @@
     "generate:agents": "python3 .agents/scripts/generate_manifest.py && python3 .agents/scripts/dependency_graph.py",
     "check:agents": "python3 .agents/scripts/validate_kit.py",
     "check:antigravity": "node .agents/hooks/antigravity-doctor.mjs",
-    "test:antigravity": "node --test .agents/hooks/tests/antigravity.test.mjs"
+    "test:antigravity": "node --test .agents/hooks/tests/antigravity.test.mjs",
+    "test:e2e": "npx playwright test",
+    "test:e2e:desktop": "npx playwright test --project='Desktop Chrome'"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
   }
 }
