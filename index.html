@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetPulse — Modern Pet Health & Commerce Platform | Design System Showcase</title>
+  <meta name="description" content="End-to-end pet healthcare and e-commerce UI design system generated via Google Stitch MCP server.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Global App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="brand-logo">🐾</div>
+        <div>
+          <h1 class="brand-title">PetPulse</h1>
+          <span class="brand-badge">Stitch Design System & Portals</span>
+        </div>
+      </div>
+
+      <nav class="portal-nav" id="portalNav">
+        <button class="nav-btn active" data-portal="petease">
+          <span class="icon">🐶</span>
+          <span>PetEase Customer PWA</span>
+          <span class="count-pill">10</span>
+        </button>
+        <button class="nav-btn" data-portal="customer">
+          <span class="icon">📱</span>
+          <span>Core Flow</span>
+          <span class="count-pill">5</span>
+        </button>
+        <button class="nav-btn" data-portal="store-admin">
+          <span class="icon">🏪</span>
+          <span>Store Admin</span>
+          <span class="count-pill">6</span>
+        </button>
+        <button class="nav-btn" data-portal="super-admin">
+          <span class="icon">⚡</span>
+          <span>Super Admin</span>
+          <span class="count-pill">6</span>
+        </button>
+        <button class="nav-btn" data-portal="tokens">
+          <span class="icon">🎨</span>
+          <span>Design Tokens</span>
+        </button>
+      </nav>
+
+      <div class="header-meta">
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span>Stitch Project #641158451866398313</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Showcase Container -->
+  <main class="showcase-main">
+    
+    <!-- PORTAL 0: PETEASE MOBILE (EXACT PROMPT SPECIFICATION) -->
+    <section class="portal-section active" id="portal-petease">
+      <div class="section-hero">
+        <div class="badge-pill">PetEase PWA • 390px Viewport • Google Stitch #14068042419867567264</div>
+        <h2>PetEase — Mobile Healthcare & Commerce Flow</h2>
+        <p>Complete 10-screen mobile user journey generated on Google Stitch: active pet orientation, clinical slot scheduling, digital passport timelines, Farmina N&D catalog, unified Rapido checkout, GPS tracking, vitals editor, PDP nutrition, tele-consultation room, and digital prescription locker.</p>
+      </div>
+
+      <div class="screens-carousel-wrapper">
+        <div class="screen-tabs" id="peteaseTabs">
+          <button class="tab-chip active" data-screen="screen1">Screen 1: Mobile Home & Pet Hub</button>
+          <button class="tab-chip" data-screen="screen2">Screen 2: Service Booking & Slot Selection</button>
+          <button class="tab-chip" data-screen="screen3">Screen 3: Digital Pet Passport & Health Records</button>
+          <button class="tab-chip" data-screen="screen4">Screen 4: Food & Pharmacy E-Commerce Catalog</button>
+          <button class="tab-chip" data-screen="screen5">Screen 5: Unified Checkout (Products + Vet Slot)</button>
+          <button class="tab-chip" data-screen="screen6">Screen 6: Live Order Tracking & GPS Telemetry</button>
+          <button class="tab-chip" data-screen="screen7">Screen 7: Pet Profile & Vitals Editor</button>
+          <button class="tab-chip" data-screen="screen_c8">Screen 8: Product Detail Page (PDP) & Nutrition</button>
+          <button class="tab-chip" data-screen="screen_c9">Screen 9: Video Tele-Consultation Room</button>
+          <button class="tab-chip" data-screen="screen_c10">Screen 10: Digital Prescription (Rx Locker)</button>
+        </div>
+
+        <div class="screen-display-panel">
+          <div class="device-column">
+            <div class="phone-frame">
+              <div class="phone-island"></div>
+              <div class="phone-screen">
+                <img id="peteaseImg" src="assets/petease_screen1.png" alt="PetEase Screen Layout" class="screen-shot">
+              </div>
+            </div>
+            <button class="expand-btn" id="expandPetEaseBtn">🔍 Click to Expand Full Resolution</button>
+          </div>
+
+          <div class="details-column" id="peteaseDetails">
+            <!-- Injected by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAL 1: CUSTOMER MOBILE -->
+    <section class="portal-section" id="portal-customer">
+      <div class="section-hero">
+        <div class="badge-pill">Mobile-First Web / PWA • 390px × 844px</div>
+        <h2>Customer Healthcare & Hyperlocal Commerce</h2>
+        <p>Consumer mobile interface featuring sticky location and pet identity switchers, clinical vaccination timelines, vet booking slot matrix, and 45-minute Rapido delivery tracking.</p>
+      </div>
+
+      <div class="screens-carousel-wrapper">
+        <div class="screen-tabs" id="customerTabs">
+          <button class="tab-chip active" data-screen="c1">Screen C1: Mobile Home & Pet Hub</button>
+          <button class="tab-chip" data-screen="c2">Screen C2: Vet & Grooming Slot Booking</button>
+          <button class="tab-chip" data-screen="c3">Screen C3: Digital Pet Passport & Medical Records</button>
+          <button class="tab-chip" data-screen="c4">Screen C4: Pet Food & Pharmacy Catalog</button>
+          <button class="tab-chip" data-screen="c5">Screen C5: Unified Checkout & Real-Time Tracking</button>
+        </div>
+
+        <div class="screen-display-panel">
+          <!-- Mobile Device Simulation Frame -->
+          <div class="device-column">
+            <div class="phone-frame">
+              <div class="phone-island"></div>
+              <div class="phone-screen">
+                <img id="customerImg" src="assets/c1_mobile.png" alt="PetPulse Screen Layout" class="screen-shot">
+              </div>
+            </div>
+            <button class="expand-btn" id="expandCustomerBtn">🔍 Click to Expand Full Resolution</button>
+          </div>
+
+          <!-- Screen Specification & Metadata Column -->
+          <div class="details-column" id="customerDetails">
+            <!-- Injected by JavaScript based on active screen -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAL 2: STORE ADMIN -->
+    <section class="portal-section" id="portal-store-admin">
+      <div class="section-hero">
+        <div class="badge-pill">Desktop Operations • 1440px Viewport</div>
+        <h2>Store Admin Operations & Dispatch Center</h2>
+        <p>High-efficiency operations dashboard for store managers, supporting product catalog management, Cloudflare R2 media upload pipeline, inventory adjustments, and Rapido rider fulfillment.</p>
+      </div>
+
+      <div class="screens-carousel-wrapper">
+        <div class="screen-tabs" id="storeAdminTabs">
+          <button class="tab-chip active" data-screen="a1">Screen A1: Product Catalog (CRUD & Dual View)</button>
+          <button class="tab-chip" data-screen="a2">Screen A2: Product Creation & Editor</button>
+          <button class="tab-chip" data-screen="a3">Screen A3: Inventory Control & Stock Inwarding</button>
+          <button class="tab-chip" data-screen="a4">Screen A4: Orders & Delivery Dispatch Center</button>
+          <button class="tab-chip" data-screen="a5">Screen A5: Vet Doctor EHR & Consultation Desk</button>
+          <button class="tab-chip" data-screen="a6">Screen A6: Supplier Purchase Orders (PO) & GRN</button>
+        </div>
+
+        <div class="screen-display-panel desktop-mode">
+          <div class="desktop-frame">
+            <div class="browser-bar">
+              <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="url-input">https://admin.petpulse.in/store/tirupati-main/products</div>
+            </div>
+            <div class="desktop-screen-content">
+              <img id="storeAdminImg" src="assets/a1_desktop.png" alt="Store Admin Screen" class="desktop-shot">
+            </div>
+          </div>
+          <button class="expand-btn" id="expandStoreBtn">🔍 Click to Expand Full Resolution</button>
+
+          <div class="details-column-full" id="storeAdminDetails">
+            <!-- Injected by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAL 3: SUPER ADMIN -->
+    <section class="portal-section" id="portal-super-admin">
+      <div class="section-hero">
+        <div class="badge-pill">Executive BI & Governance • 1440px Viewport</div>
+        <h2>Super Admin Platform & Executive Intelligence</h2>
+        <p>Executive command center consolidating multi-branch GMV analytics, appointment distribution charts, stockout risk prediction, role-based governance, and immutable audit logging.</p>
+      </div>
+
+      <div class="screens-carousel-wrapper">
+        <div class="screen-tabs" id="superAdminTabs">
+          <button class="tab-chip active" data-screen="s1">Screen S1: Executive Analytics & BI Hub</button>
+          <button class="tab-chip" data-screen="s2">Screen S2: Store Admin Approvals & RBAC</button>
+          <button class="tab-chip" data-screen="s3">Screen S3: Master Inventory & Advanced Data Grid</button>
+          <button class="tab-chip" data-screen="s4">Screen S4: System Audit Logs & Operational Health</button>
+          <button class="tab-chip" data-screen="s5">Screen S5: Multi-Clinic Branch Governance Map</button>
+          <button class="tab-chip" data-screen="s6">Screen S6: Financial Settlements & Revenue Reconciliation</button>
+        </div>
+
+        <div class="screen-display-panel desktop-mode">
+          <div class="desktop-frame">
+            <div class="browser-bar">
+              <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="url-input">https://super.petpulse.in/analytics/executive-command</div>
+            </div>
+            <div class="desktop-screen-content">
+              <img id="superAdminImg" src="assets/s1_desktop.png" alt="Super Admin Screen" class="desktop-shot">
+            </div>
+          </div>
+          <button class="expand-btn" id="expandSuperBtn">🔍 Click to Expand Full Resolution</button>
+
+          <div class="details-column-full" id="superAdminDetails">
+            <!-- Injected by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOKENS & SYSTEM FOUNDATION -->
+    <section class="portal-section" id="portal-tokens">
+      <div class="section-hero">
+        <div class="badge-pill">Unified Design System • Asset ID: 7114358651454655771</div>
+        <h2>PetPulse Global Design Tokens</h2>
+        <p>Core design tokens synthesized into the Stitch Design System, balancing clinical reassurance and consumer warmth.</p>
+      </div>
+
+      <div class="tokens-grid">
+        <div class="token-card">
+          <h3>Primary & Brand Colors</h3>
+          <div class="swatch-list">
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#059669;"></div>
+              <div><strong>Primary Brand:</strong> <code>#059669</code> (Emerald Green)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#047857;"></div>
+              <div><strong>Primary Dark:</strong> <code>#047857</code> (Hover / Pressed)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#D1FAE5; border:1px solid #A7F3D0;"></div>
+              <div><strong>Mint Accent:</strong> <code>#D1FAE5</code> (Active Pills / Tags)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#F0FDF4; border:1px solid #BBF7D0;"></div>
+              <div><strong>Light Sage Canvas:</strong> <code>#F0FDF4</code> (Card Surfaces)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="token-card">
+          <h3>Neutral & Structural Colors</h3>
+          <div class="swatch-list">
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#0F172A;"></div>
+              <div><strong>Slate Dark:</strong> <code>#0F172A</code> (Headers, Sidebar)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#64748B;"></div>
+              <div><strong>Slate Muted:</strong> <code>#64748B</code> (Subtext, Timestamps)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#E2E8F0;"></div>
+              <div><strong>Border Gray:</strong> <code>#E2E8F0</code> (Dividers, Inputs)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#F8FAFC; border:1px solid #E2E8F0;"></div>
+              <div><strong>Canvas Background:</strong> <code>#F8FAFC</code> (App Body)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="token-card">
+          <h3>Semantic Status Indicators</h3>
+          <div class="swatch-list">
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#10B981;"></div>
+              <div><strong>Success:</strong> <code>#10B981</code> (Verified Vaccines, Completed Deliveries)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#F59E0B;"></div>
+              <div><strong>Urgent / Warning:</strong> <code>#F59E0B</code> (Booster Due ≤4d, Low Stock)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#EF4444;"></div>
+              <div><strong>Critical / Stockout:</strong> <code>#EF4444</code> (Stockout, Emergency Alert)</div>
+            </div>
+            <div class="swatch-item">
+              <div class="swatch-box" style="background:#3B82F6;"></div>
+              <div><strong>Logistics / Info:</strong> <code>#3B82F6</code> (Rapido Dispatch, Cloudflare R2)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="token-card">
+          <h3>Typography & Geometry</h3>
+          <div class="meta-list">
+            <div class="meta-item">
+              <strong>Headline Font:</strong> Plus Jakarta Sans (600, 700)
+            </div>
+            <div class="meta-item">
+              <strong>Body & Microcopy:</strong> Inter (400, 500)
+            </div>
+            <div class="meta-item">
+              <strong>Button Radii:</strong> <code>rounded-full</code> (Pill action buttons)
+            </div>
+            <div class="meta-item">
+              <strong>Card Radii:</strong> <code>rounded-2xl</code> (Mobile) / <code>rounded-xl</code> (Desktop)
+            </div>
+            <div class="meta-item">
+              <strong>Shadow Scale:</strong> <code>shadow-xs</code>, <code>shadow-sm</code>, <code>shadow-md</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- High-Res Zoom Modal -->
+  <div class="image-modal" id="imageModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn">✕</button>
+      <div class="modal-body">
+        <h3 id="modalTitle" class="modal-title">Screen Preview</h3>
+        <div class="modal-img-container">
+          <img id="modalImg" src="" alt="Zoomed Screen">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

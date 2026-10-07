@@ -1,0 +1,214 @@
+{
+  "screen1": {
+    "id": "screen1",
+    "title": "Mobile Home & Pet Hub",
+    "status": "SUCCESS",
+    "durationSec": 62.3,
+    "screenName": "projects/14068042419867567264/screens/bdcc0684d61a4e608b56e1d7f6f58e4c",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1W5NAnVZYJD3I9v_kgEMB982Fss7ve3kR3M9tLknAFG0rsgfr3Jzm_7WRzKieAKsqPsQcp-gmoEtR86mNpASEf9lJcCZUZDh23iDhqn-pkjVqzh7p7ZdOsgoMZTauAoQDKHRN5umsAsbkzEQkd7Ni0SDF8v157fJ8xuTR3FuV5CrKaquXZGI9qxXx4uSzrzcmvC0BZuoBessbtl5V41qp0K7fAicywyEwBkZHvuj78rv7iteVLwW8XMGogx",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen1.png"
+  },
+  "screen2": {
+    "id": "screen2",
+    "title": "Service Booking & Slot Selection",
+    "status": "SUCCESS",
+    "durationSec": 47.5,
+    "screenName": "projects/14068042419867567264/screens/0a487a82467d43e7a7c6901bb82cc603",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UYG7tX34wipKuB7n-o7vkq9rxDeYyrzI20vLaJkSG0Ch8KzJ5IpBGhqmju3pqV8-mxr3QgEFkFJlzdBL_AgEWPBNQ2Sf-RNDAQ_oHRf-BCK0Uk3gjm32R1oA45WH9bmEfrzbyBM7WwnwXG2IAu0ghW-BYTTaDPdwP_QTVIP0gVdNzscQyU4c2x8Lv-D1-kZ5hwrUyLn2z3OTgwJqkexePBGZfrNhPNbnBjBPUrah16qTTOyKPqIif7jWlO",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen2.png"
+  },
+  "screen3": {
+    "id": "screen3",
+    "title": "Digital Pet Passport & Health Records",
+    "status": "SUCCESS",
+    "durationSec": 54.0,
+    "screenName": "projects/14068042419867567264/screens/4a74cd14139746dda80230498f1f8af8",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VGGwwqLDlGcjn9qjncaUaW9FFgVznjWBQmOqi2dcVcjsWYAsAw377WHVjgHQvtrmkwyBPhFLZRzBROyfuU-zFqu1B2VTkacj_8FijHAe_PoTvcr5fMTDM80wwpdDf8T4GspUZI0DAAAxNvOvS9ilLaWEpShx8E5n25jkLaYgVse1wirRri4w-n9lhHNUX8YTC_yT5rsp5dp47yun3fl0opitahDSUPtKa-X4c-jHDLJwKveSwQAXbc7U1z",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen3.png"
+  },
+  "screen4": {
+    "id": "screen4",
+    "title": "Pet Food & Pharmacy E-Commerce Catalog",
+    "status": "SUCCESS",
+    "durationSec": 71.9,
+    "screenName": "projects/14068042419867567264/screens/4a7befc291e64d58a6e126a741b0aaf6",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V7f4O7LxHXkbtPQoJ7P4yPmYh-yWUF2A7hg9UbV7snnJilN-ryuOO7v7BSWXUQ0hb0fZmsjrDeO8TPOx8d-RdawJEd8I3dipYZqFHZDFQrRZYtzLy6kngJIkglaJmL8AYTBtWEUhTmq-5zkNEdo6bvpVFbQvHVFyi9-4ij7pkXrsEo6HYJXnU-tKtakYY4w5jPOsRjcEBd9U4_o24BnJqT8JCgEt6NsGcD1ch_aHMexGNyIQwOwmr28MdM",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen4.png"
+  },
+  "screen5": {
+    "id": "screen5",
+    "title": "Unified Checkout (Products + Vet Slot)",
+    "status": "SUCCESS",
+    "durationSec": 50.7,
+    "screenName": "projects/14068042419867567264/screens/4b388b3c97574d8d8daf5673694e2d68",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VitZWJdTx9DnXr04vtsY38Ma0HqifYit2bio09SNcQotEYuqTc5u29P6ehIgSRWWTOtPrBiv5a1H1zorP8JEbzqpTtdz2gMpCyfrpFCWXEcxNMd2rcQvwVCNzaclEOH6suFVxfBvXLPknCUq3_L74hBTXqGBDZPkJoc9IGZISKTJwgwBybB7h3UE0lzFpER4ExlWzcE3lICWH-du2WZ9e8CyIc2Gm-y0Bvpi5vO0clb2WbxF0lW0tBrnM",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen5.png"
+  },
+  "screen_a1": {
+    "id": "screen_a1",
+    "title": "Store Admin: Product Catalog Management",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 115.7,
+    "screenName": "projects/14068042419867567264/screens/987f88d12cbe43f5bbed0e6ea11a48e0",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1X0197BpFqiZOLGHZnVfdZkGoFzhgxG0NitCVuV_Kzglok8cL8_JzcSncruirenVUY8SVO37GYlC9Zs9ITKZanY8Pra4xoCMvpZFIrC9W5l28eqNgS_FrER6LnMqVkz493Qo0tMZ8uLdGGm8ME8wuzcRNhgKHhbHgNhKVFmTHTlZM3x2Jc2fBk7lTEjda_GGgyhNKmYfqCY8SR7RU62v-aruNfueA_dLt0ZnwFKap17r6micNBXTeeO7JUh",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_a1.png"
+  },
+  "screen_a2": {
+    "id": "screen_a2",
+    "title": "Store Admin: Product Creation & Editor",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 89.1,
+    "screenName": "projects/14068042419867567264/screens/fe9d6053bbb6478ea552cd5619ea9b9a",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UzSP7lVd-W6Upj8otSV79C7V_U9Vmruq7rUDUi0M5jDiOO442UvvwPzlIhlW0yXw0TQTx70WuLoBzRiNP46RiNGbL_H-jx1w_UKAusuhYighTYu_PYxuLLt0AQuru3j7b0yMQZbIIRuw4lPVZ57Q3TDKRzK7nyORdlNBgfyCMvDPmMhcT7KTfCZNeQFwppdLAlO1lXhnoWPoXjtMQVg4CuhIAU6e0ntoAnKT8zduRPvhWGWmf0kwnqWQ3K",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_a2.png"
+  },
+  "screen_a3": {
+    "id": "screen_a3",
+    "title": "Store Admin: Inventory Control & Stock Inwarding",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 89.3,
+    "screenName": "projects/14068042419867567264/screens/0e8da2fba7b942e196bf71443d0ca900",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XYwOY4H72GWGZslwT8FWQXmb1cgmpC7msXFEUekB5TtS79yjish4BE146A4e3vE6u8f_oDn84oyHXe4YfPeH7OksTfYcnbByK0gXeaW5p6v9h9uECJUcaKM9n7dQFl_CqHkjiQT0Ii_DIvv0MVD_7isS19AyZhqXEJmqlxVGggFdo4TX_41MWmP20weTRWdv0TsAkRMioBXvTTHCrpesrsqRA6QNy6fFArDkYXKN-hoG63fLRAyblhrlSl",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_a3.png"
+  },
+  "screen_a4": {
+    "id": "screen_a4",
+    "title": "Store Admin: Orders & Delivery Dispatch Center",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 70.8,
+    "screenName": "projects/14068042419867567264/screens/d125c980380246aabb814d0124ea7c65",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VFU9xQRaTxT6I--SJ-czX8dEVDKZGsvb8GYxat3ozURF3LJtZFCz5OU7nlMetTiG34eBVe86iSNmyUOmowHBWS6tBuIu2ed8Lgo7VasiVPyObWuaBeU3hxHWea-saT_Szhg61B54Bp5NAjs8ZQHvT3SuomPr7BdQ2BSByjMHOFpDMuO74bAyqoWnch4QMNstTdf_XMob73gXXEZLeGyJHKO3JW-26Yn87uWcxcSsbN6qoGYba9kEUKGq4",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_a4.png"
+  },
+  "screen_s1": {
+    "id": "screen_s1",
+    "title": "Super Admin: Executive Analytics & BI Hub",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 95.4,
+    "screenName": "projects/14068042419867567264/screens/f3f365f585ca44e0acffbd1a3aebbb08",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V5-xeb6pW4jDgy81zOME5YOGrIKXhfwXiqIemGa6Wsb8PmkkskwSzNdEBezNu3ibhuvDdAtozIE6Qk6IhOaeF2m5c5nPup83zRjgk8W3EhHGVSZF_LhbjcCBwp2w5FavyCZ2l-4pI2ME2jsfqkBaIKxE9OnVfRe43QrWJ7Pc2M7Pr6rYJsz0atiLFquh61dRcTIqHrIrGFYENMOBaZdXcamsieaR_dXbs8Syald7yE0_Ql9IVrJgkMzQcw",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_s1.png"
+  },
+  "screen_s2": {
+    "id": "screen_s2",
+    "title": "Super Admin: Store Admin Approvals & Governance (RBAC)",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 97.1,
+    "screenName": "projects/14068042419867567264/screens/f5d0476b5c834f918fb6000a4ea5c54d",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WSkLRH7VQ_UiqNgZ29BNwoDGmeaA2HZb-sAps2YI2cfCFBSZzdMx4UQfTu9t6LTap8PCWpam6PeZnXDBjrNX0Tx7KwpeRxHL32b7ZbiSrwgRcWXW4T19-jOqYvpCenl_YWl4aIlW2Gkhs8jtDpaHNadFPiBJf23jZrNCZ1n49fMTyAwNMf5Rpu27wYbfu1b2aadCM48I_m5e5dmXj9jdJJvYZIWaiYzSlN3r-Bet_cdoRD1F2TEuYFcTjN",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_s2.png"
+  },
+  "screen_s3": {
+    "id": "screen_s3",
+    "title": "Super Admin: Platform-Wide Master Inventory & Advanced Data Grid",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 127.2,
+    "screenName": "projects/14068042419867567264/screens/e253863b2d0a490f9a10a8bb84ec2b96",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UmxKMAKsw-xeb4Jaby9BZ8YV-gRAiTk0DwIvwnZu8ePP_Db2ZpJnNHVM70WgADx0wDEHWgz93vrG66sBpn0FaNtZK5HMQeKi1o_vvlcFcgoR6WY05qdGtqdQej9qUO3rzpzll-RKBB9XIXiV4oNzO5cZT-xT8VxUXLOhFu38ov6aHcqW0U9VJzlX9dK6MywWLXZ7I09jzEI8jAY1RH5_0JSMbVy-aAHF-C9KRCvo0WzdgoXPiN4Tu6k2Y",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_s3.png"
+  },
+  "screen_s4": {
+    "id": "screen_s4",
+    "title": "Super Admin: System Audit Logs & Operational Health",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 116.8,
+    "screenName": "projects/14068042419867567264/screens/4c0c56d6e8434a21b4b9aad41fea500b",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XBEKZcy0S_54Fpf04vRYJhAdBvSwdBtfIxe-SFjGMKBgzsr9zEXIFbGbuooI-PYsbRN4rLAPIQUdb94mWS78jNUbw2lbWe-gmZP17NHLO62DugOuKW6FcT4bgahXKz7iEMPr6rtYP7KrfqLC21KXlUQcWQcaqxOSo1dckGut755MAGGqp9Hm2lPUGhGRuZFw0cu3dceUnoNJwdmHaTCMpnJ-LgY9Iv3nKI5-SWyzJhQPNzxc7CscNrrpc",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_s4.png"
+  },
+  "screen_c6": {
+    "id": "screen_c6",
+    "title": "Customer: Live Order Tracking & GPS Telemetry",
+    "deviceType": "MOBILE",
+    "status": "SUCCESS",
+    "durationSec": 53.6,
+    "screenName": "projects/14068042419867567264/screens/90353e0cd3b647fdab82aa7c9ef7aeb4",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XDstqtiMuHLN0SVjRrl2iefLNujRBqvBqnbbXJjtEF3mU00t2SYtJqYdjMLw9WiM-6UpLgcSeNH9i6eVSCPpf9q3zGQ_zkRB_gRguNb7MpYsndqyVONfdiKCabrrrrmpabyDypcKFLIlGvylrOadVDuViNU11Il_OKa-R0p9bA_NjYG1epSiOCbTBi_hyFKnNqnc17887LRrs-k3-jnmq8l-MScNaSd841rcp1e_ZAXxUVv-FFt4KC830",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_c6.png"
+  },
+  "screen_c7": {
+    "id": "screen_c7",
+    "title": "Customer: Pet Profile & Vitals Editor",
+    "deviceType": "MOBILE",
+    "status": "SUCCESS",
+    "durationSec": 64.2,
+    "screenName": "projects/14068042419867567264/screens/0bdcaffac4ee4109bf6c04387322faf7",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UjktRdS-o73FTZ_ksMvGPlnj6Smxy_KEr3XQCpFMcK7dz0x_nHyi5JGwdYHOTf8h8BFJXi_gCTOsrMB58KOkc-cp2CLLsbigJhmrtziNxInh0gitTroPCvPCB8QGXynRxBCeTSwWYRyPu8vx8_8zFnjQi0baBzXrNPhm7sUfJZ4PU1Ft0SiMAfsLFUr66gVoIsprPzOJq8UZcRfHov3_tsLAkJBXF9Qj30hh4VlaRI2VOHdv1bcA4vgjvJ",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_c7.png"
+  },
+  "screen_c8": {
+    "id": "screen_c8",
+    "title": "Customer: Product Detail Page (PDP) & Clinical Nutrition",
+    "deviceType": "MOBILE",
+    "status": "SUCCESS",
+    "durationSec": 60.2,
+    "screenName": "projects/14068042419867567264/screens/2e8af7b0293c4d4ca239713f40d9071a",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UZOVvzd7y9IPwdlBQTX3qbFrdT0r0gZjGOjrexTmfGl1s5g9wyLAnV2y16qODbHsm7IBp5AuxiNWCMF9Xv6bdkQAlGrkqippSEg5fPHr_YG5vzAMpAFeekyZ_Mu7Cl23esIW7R4qBxaZfHJ7oBfCwAmKa07iBlPgaIojiNhgcvGqG1fm3rZPSAXAlLS0sJ_gvs8qDb1kQg56jXNgwVBch7LBn7qfUpxJimbh4FtV86gF_JZ5BQf6LlW6U",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_c8.png"
+  },
+  "screen_c9": {
+    "id": "screen_c9",
+    "title": "Customer: Video Tele-Consultation & Virtual Clinic",
+    "deviceType": "MOBILE",
+    "status": "SUCCESS",
+    "durationSec": 54.0,
+    "screenName": "projects/14068042419867567264/screens/ab9b885c0627452bb9ebf634fa3564ac",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XxwwneinbrPw4lqHyivs_er6IvpEP37Cgetp6Aw8bgdwMJG4kcUstWpmuLKExZOzMbttmqIiCzbdkm5x5vY-uQ9lmKSKXh-MhqwyBInEaKgwNaz3dEmKlG_aDEBktzqFCtvI2mPPped2dY0EC7Unsnv4Ai5cR5a2LXlWFAqC_ZxKx_Ep9-kagjlA56EmSCa3LH0bWkhPXNM4aSk2tecGkhoCUhHphJlFfqH618zdj1SWubXgXpnvk4Lio",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_c9.png"
+  },
+  "screen_c10": {
+    "id": "screen_c10",
+    "title": "Customer: Digital Prescription & Medical Records (Rx Locker)",
+    "deviceType": "MOBILE",
+    "status": "SUCCESS",
+    "durationSec": 66.1,
+    "screenName": "projects/14068042419867567264/screens/d9c6d7936a584dd8937b19d574412c39",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UXxf0q4tQaLAXFiNE1T1ByhcZh3vkwTNrTgAEwh-hiyN_LQ07uLxQSKpfPQLtSsO4hKMCs-aCmVl49daSLTZnVA1cfYBRW9nSDh_jEhKE4HjOuprDqLDlIuWEvcWqbClziaO8vyQ9x5kApXru4qGVBGAAcVlXp21p72GQBgF6TXIRxeMNR7P-4K9AFOEzqStyLtD18UQalFDMnADgVOSDiddyPdsd_0hrnxkisBAn3RG0oBq9LBfd0PaVU",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_c10.png"
+  },
+  "screen_a5": {
+    "id": "screen_a5",
+    "title": "Store Admin: Vet Doctor EHR & Consultation Desk",
+    "deviceType": "DESKTOP",
+    "status": "ERROR",
+    "error": "The read operation timed out"
+  },
+  "screen_a6": {
+    "id": "screen_a6",
+    "title": "Store Admin: Supplier Purchase Orders (PO) & GRN Management",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 66.5,
+    "screenName": "projects/14068042419867567264/screens/3acd09e318b4460cacbd8b3a93221370",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Uwf6kMco9FG8a4ju1RaDviyXk0e2rieFlumf-3OKOGz3kfgX0j3IPa5Dp1GX-yXLqKFaOnH7To0twX2k7mcft9_63q5xJ4mX3fMgr96hqPN8VcHIhdsSP1PFx6I0X1zBcnTUbMQe_D5mwjeEKPm5kDkbQTe9z2Fm0qY1ULcWJRoVXYIE-CqyQvyjDhMqV_osKKkNZZ778PEjWnrFCu_nsfXIrTi6RYfzWAD45fCx6f0ooaPZSuBxjolaA",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_a6.png"
+  },
+  "screen_s5": {
+    "id": "screen_s5",
+    "title": "Super Admin: Multi-Clinic Branch & Franchise Governance Map",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 101.8,
+    "screenName": "projects/14068042419867567264/screens/becc95475b444e02a0c5f1b570bf7805",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XzLv5gb5kbV52qL_8rs-TGtcZsAb7Hl0gwuvI1NvU_WHu_ZkL0_1BBSDG2rBhkmvtsR1Or7eE4LZrnsttHK5J4VUplO14-oI28YjCBXaIyTgMNX8WYM9q22b_kEfkFiCLQLaBQeXIhCg2IDS2Q8xTKECpw4o5mW1bqCqQUTE-0mtS3-6EdMX43JbSnMt153ayzQZ3Iab6UozjBLT36kJPtwB0ncTD0zoZg904yx6HKmCt1wmr7eacsh2O9",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_s5.png"
+  },
+  "screen_s6": {
+    "id": "screen_s6",
+    "title": "Super Admin: Financial Settlements & Revenue Reconciliation",
+    "deviceType": "DESKTOP",
+    "status": "SUCCESS",
+    "durationSec": 98.3,
+    "screenName": "projects/14068042419867567264/screens/d6b6046be54141cab70cd62e7812692d",
+    "screenshotUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WqgRDstk7tQ8Iy8QoMPvnYSTE8r856Ezd5N-eq8mBX5gAfy9abfqrJZNsQOOfC5ynu5AaoxVB-S01CGmNjFFlAqecmeyRQAZxvnCNtbko2Nn0Z3PD-BbK3dzU8E3FKO5notItXQPhncAPA6NFjUaXemOGHqnOsrXwVnR0fX1bhMOXQK-D8P4AJKfZOVq8aCLeigS2j31Lv_jLXDKo5rf1vBdrKtFzNerXt2r6QMxqCaWeNoEYfl6qYNRpT",
+    "localImagePath": "/Users/trinadh/.gemini/antigravity-ide/brain/31e45143-7c6e-4438-9297-4e0f6e483f90/petease_assets/screen_s6.png"
+  }
+}
