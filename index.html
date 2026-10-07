@@ -3,336 +3,699 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alphapetz Pet Clinic — Modern Pet Health & Commerce | Sea Breeze Palette</title>
-  <meta name="description" content="End-to-end pet healthcare and e-commerce UI design system featuring the Sea Breeze palette.">
+  <title>Alphapetz Pet Clinic & Store — Veterinary Healthcare, Pharmacy & Supplies</title>
+  <meta name="description" content="Alphapetz Pet Clinic: 24/7 veterinary care, prescription pet food, medicines, grooming spa, and 45-minute express pet delivery in Tirupati.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Global App Header -->
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="announcement-content">
+      <span>🐾 <strong>Alphapetz Sea Breeze Care:</strong> Free 45-Min Express Delivery on orders over ₹499!</span>
+      <div class="announcement-right">
+        <span class="location-chip">📍 <strong>Tirupati Clinic:</strong> KT Road Main Branch</span>
+        <a href="tel:+919849073877" class="er-hotline">🚨 24/7 Vet ER: +91 98490-PETS</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
   <header class="app-header">
     <div class="header-container">
-      <div class="brand-group">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-group" id="brandHomeLink">
         <div class="brand-logo">🐾</div>
         <div>
           <h1 class="brand-title">Alphapetz</h1>
-          <span class="brand-badge">Pet Clinic • Sea Breeze 🌊</span>
+          <span class="brand-badge">Pet Clinic & E-Commerce 🌊</span>
         </div>
+      </a>
+
+      <!-- Instant Live Search Bar -->
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search Royal Canin, vaccines, shampoos, supplements..." aria-label="Search products and medicines">
+        <button id="clearSearchBtn" class="clear-search-btn" title="Clear Search">✕</button>
       </div>
 
-      <nav class="portal-nav" id="portalNav">
-        <button class="nav-btn active" data-portal="petease">
-          <span class="icon">🐶</span>
-          <span>PetEase Customer PWA</span>
-          <span class="count-pill">10</span>
-        </button>
-        <button class="nav-btn" data-portal="customer">
-          <span class="icon">📱</span>
-          <span>Core Flow</span>
-          <span class="count-pill">5</span>
-        </button>
-        <button class="nav-btn" data-portal="store-admin">
+      <!-- Main Navigation Links -->
+      <nav class="portal-nav" id="mainNav">
+        <button class="nav-btn active" data-target="storeSection">
           <span class="icon">🏪</span>
-          <span>Store Admin</span>
-          <span class="count-pill">6</span>
+          <span>Shop Store</span>
         </button>
-        <button class="nav-btn" data-portal="super-admin">
-          <span class="icon">⚡</span>
-          <span>Super Admin</span>
-          <span class="count-pill">6</span>
+        <button class="nav-btn" data-target="vetBookingSection">
+          <span class="icon">🩺</span>
+          <span>Book Vet</span>
         </button>
-        <button class="nav-btn" data-portal="tokens">
-          <span class="icon">🎨</span>
-          <span>Design Tokens</span>
+        <button class="nav-btn" data-target="groomingSection">
+          <span class="icon">✂️</span>
+          <span>Grooming Spa 🩷</span>
+        </button>
+        <button class="nav-btn" data-target="passportSection">
+          <span class="icon">🐶</span>
+          <span>Pet Passport</span>
         </button>
       </nav>
 
-      <div class="header-meta">
-        <div class="status-indicator">
-          <span class="pulse-dot"></span>
-          <span>Stitch Project #641158451866398313</span>
+      <!-- User & Cart Header Actions -->
+      <div class="header-actions">
+        <!-- Active Pet Profile Chip -->
+        <div class="pet-pill" id="petProfileBtn" title="Current Active Pet Profile">
+          <span class="pet-avatar">🐕</span>
+          <div class="pet-pill-info">
+            <span class="pet-name">Bruno</span>
+            <span class="pet-meta">Labrador • 28.4 kg</span>
+          </div>
         </div>
+
+        <!-- Floating Cart Trigger -->
+        <button class="cart-btn" id="openCartBtn" aria-label="Open Shopping Cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-title">Cart</span>
+          <span class="cart-count" id="cartCountBadge">0</span>
+          <span class="cart-total-pill" id="cartTotalHeader">₹0</span>
+        </button>
       </div>
+
     </div>
   </header>
 
-  <!-- Main Showcase Container -->
-  <main class="showcase-main">
-    
-    <!-- PORTAL 0: PETEASE MOBILE (EXACT PROMPT SPECIFICATION) -->
-    <section class="portal-section active" id="portal-petease">
-      <div class="section-hero">
-        <div class="badge-pill">PetEase PWA • 390px Viewport • Google Stitch #14068042419867567264</div>
-        <h2>PetEase — Mobile Healthcare & Commerce Flow</h2>
-        <p>Complete 10-screen mobile user journey generated on Google Stitch: active pet orientation, clinical slot scheduling, digital passport timelines, Farmina N&D catalog, unified Rapido checkout, GPS tracking, vitals editor, PDP nutrition, tele-consultation room, and digital prescription locker.</p>
-      </div>
+  <!-- Main Store Layout -->
+  <main class="main-content" id="home">
 
-      <div class="screens-carousel-wrapper">
-        <div class="screen-tabs" id="peteaseTabs">
-          <button class="tab-chip active" data-screen="screen1">Screen 1: Mobile Home & Pet Hub</button>
-          <button class="tab-chip" data-screen="screen2">Screen 2: Service Booking & Slot Selection</button>
-          <button class="tab-chip" data-screen="screen3">Screen 3: Digital Pet Passport & Health Records</button>
-          <button class="tab-chip" data-screen="screen4">Screen 4: Food & Pharmacy E-Commerce Catalog</button>
-          <button class="tab-chip" data-screen="screen5">Screen 5: Unified Checkout (Products + Vet Slot)</button>
-          <button class="tab-chip" data-screen="screen6">Screen 6: Live Order Tracking & GPS Telemetry</button>
-          <button class="tab-chip" data-screen="screen7">Screen 7: Pet Profile & Vitals Editor</button>
-          <button class="tab-chip" data-screen="screen_c8">Screen 8: Product Detail Page (PDP) & Nutrition</button>
-          <button class="tab-chip" data-screen="screen_c9">Screen 9: Video Tele-Consultation Room</button>
-          <button class="tab-chip" data-screen="screen_c10">Screen 10: Digital Prescription (Rx Locker)</button>
-        </div>
-
-        <div class="screen-display-panel">
-          <div class="device-column">
-            <div class="phone-frame">
-              <div class="phone-island"></div>
-              <div class="phone-screen">
-                <img id="peteaseImg" src="assets/petease_screen1.png" alt="PetEase Screen Layout" class="screen-shot">
-              </div>
-            </div>
-            <button class="expand-btn" id="expandPetEaseBtn">🔍 Click to Expand Full Resolution</button>
+    <!-- Promotional Hero & Fast Emergency Triage Banner -->
+    <section class="hero-banner">
+      <div class="hero-container">
+        
+        <div class="hero-text-block">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>45-Min Express Delivery via Rapido • Tirupati Hub</span>
+          </div>
+          <h2 class="hero-title">Medical Trust & Hyperlocal Care for Your Pets.</h2>
+          <p class="hero-subtitle">Prescription pet diets, verified vaccines, life-saving veterinary pharmacy, and stress-free clinic appointments curated by licensed veterinary surgeons.</p>
+          
+          <div class="hero-cta-group">
+            <a href="#storeSection" class="btn-primary">Shop Food & Pharmacy ↓</a>
+            <a href="#vetBookingSection" class="btn-secondary">Book Vet Consultation (₹499) 🩺</a>
           </div>
 
-          <div class="details-column" id="peteaseDetails">
-            <!-- Injected by JavaScript -->
+          <div class="hero-trust-metrics">
+            <div class="trust-item">
+              <span class="trust-num">100%</span>
+              <span class="trust-label">Authentic Vet Pharmacy</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-num">45 Min</span>
+              <span class="trust-label">Average Delivery Time</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-num">4.9 ★</span>
+              <span class="trust-label">3,400+ Happy Pet Parents</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Pet Health Alert Card (Bruno) -->
+        <div class="hero-alert-card">
+          <div class="alert-card-header">
+            <div class="alert-title-row">
+              <span class="alert-icon">⚠️</span>
+              <div>
+                <h4>Vaccine Due in 3 Days!</h4>
+                <p>Bruno's Annual Anti-Rabies Booster</p>
+              </div>
+            </div>
+            <span class="badge-urgent">URGENT</span>
+          </div>
+
+          <div class="alert-card-body">
+            <div class="alert-pet-stats">
+              <div class="stat-bubble">
+                <span class="stat-title">Pet Name</span>
+                <span class="stat-value">Bruno (Dog)</span>
+              </div>
+              <div class="stat-bubble">
+                <span class="stat-title">Current Weight</span>
+                <span class="stat-value">28.4 kg</span>
+              </div>
+              <div class="stat-bubble">
+                <span class="stat-title">Microchip</span>
+                <span class="stat-value">#9810-TIR</span>
+              </div>
+            </div>
+            <p class="alert-note">Keep Bruno's vaccination immunity intact before scheduled travel or park visits.</p>
+          </div>
+
+          <div class="alert-card-footer">
+            <button class="btn-alert-cta" id="quickVaccineBookingBtn">Schedule Booster Slot (₹299) →</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 1: E-COMMERCE STORE -->
+    <section class="section-container" id="storeSection">
+      
+      <div class="section-header-row">
+        <div>
+          <span class="badge-pill">Hyperlocal Pet Store & Pharmacy</span>
+          <h3 class="section-title">Essential Nutrition & Clinical Supplies</h3>
+          <p class="section-desc">Hand-picked veterinary diets, supplements, grooming essentials, and doctor-prescribed medications.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filters" id="categoryFilters">
+          <button class="filter-chip active" data-category="all">All Products (<span id="countAll">12</span>)</button>
+          <button class="filter-chip" data-category="dog-food">🍖 Dog Food</button>
+          <button class="filter-chip" data-category="cat-food">🐱 Cat Food</button>
+          <button class="filter-chip" data-category="pharmacy">💊 Vet Pharmacy & Rx</button>
+          <button class="filter-chip" data-category="grooming">🪮 Grooming & Spa 🩷</button>
+          <button class="filter-chip" data-category="supplements">🦴 Supplements</button>
+        </div>
+      </div>
+
+      <!-- Active Search/Filter Result Bar -->
+      <div class="store-filter-status" id="filterStatusRow" style="display: none;">
+        <span>Showing results for: <strong id="filterStatusQuery"></strong></span>
+        <button id="resetFiltersBtn" class="reset-link">Reset all filters</button>
+      </div>
+
+      <!-- Product Catalog Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Dynamic Products Populated by JavaScript -->
+      </div>
+
+    </section>
+
+    <!-- SECTION 2: IN-CLINIC & TELE-VET BOOKING WIZARD -->
+    <section class="section-container" id="vetBookingSection">
+      <div class="booking-card">
+        
+        <div class="booking-header">
+          <div>
+            <span class="badge-pill">Tirupati Certified Veterinary Care</span>
+            <h3 class="section-title">Schedule In-Clinic or Video Consultation</h3>
+            <p class="section-desc">Meet Senior Veterinarian Dr. S. Rao, BVSc or Dr. Ananya K., MVSc for full health diagnostics.</p>
+          </div>
+          <div class="status-indicator">
+            <span class="pulse-dot"></span>
+            <span>Today: 4 Slots Available</span>
+          </div>
+        </div>
+
+        <div class="booking-grid">
+          
+          <!-- Step 1: Select Consultation Service -->
+          <div class="booking-col">
+            <h4 class="booking-step-title">1. Select Clinical Service</h4>
+            <div class="service-selector" id="serviceSelector">
+              <label class="service-option selected" data-service="general" data-price="499">
+                <input type="radio" name="service" checked>
+                <div class="service-info">
+                  <span class="service-name">Comprehensive Health Check + Consult</span>
+                  <span class="service-time">⏱ 30 Mins • Vitals, Eyes, Ears & Heart</span>
+                </div>
+                <span class="service-price">₹499</span>
+              </label>
+
+              <label class="service-option" data-service="vaccine" data-price="299">
+                <input type="radio" name="service">
+                <div class="service-info">
+                  <span class="service-name">Anti-Rabies / 7-in-1 Vaccination</span>
+                  <span class="service-time">⏱ 15 Mins • Includes Vet Health Check Certificate</span>
+                </div>
+                <span class="service-price">₹299</span>
+              </label>
+
+              <label class="service-option" data-service="video" data-price="399">
+                <input type="radio" name="service">
+                <div class="service-info">
+                  <span class="service-name">Live Video Tele-Consultation</span>
+                  <span class="service-time">⏱ 20 Mins • Digital Rx sent to Rx Locker</span>
+                </div>
+                <span class="service-price">₹399</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Date & Slot Matrix -->
+          <div class="booking-col">
+            <h4 class="booking-step-title">2. Choose Date & Time Slot</h4>
+            
+            <!-- Date Chips -->
+            <div class="date-chips-row" id="dateChips">
+              <button class="date-chip active" data-date="Today, Oct 7">Today<br><strong>Oct 7</strong></button>
+              <button class="date-chip" data-date="Tomorrow, Oct 8">Thu<br><strong>Oct 8</strong></button>
+              <button class="date-chip" data-date="Fri, Oct 9">Fri<br><strong>Oct 9</strong></button>
+              <button class="date-chip" data-date="Sat, Oct 10">Sat<br><strong>Oct 10</strong></button>
+            </div>
+
+            <!-- Time Slots Grid -->
+            <div class="slots-container">
+              <span class="slots-subheading">Morning Slots:</span>
+              <div class="slots-grid" id="morningSlots">
+                <button class="slot-btn active" data-time="09:30 AM">09:30 AM</button>
+                <button class="slot-btn" data-time="10:15 AM">10:15 AM</button>
+                <button class="slot-btn" data-time="11:00 AM">11:00 AM</button>
+                <button class="slot-btn disabled" title="Already Booked">11:45 AM (Full)</button>
+              </div>
+
+              <span class="slots-subheading">Evening Slots:</span>
+              <div class="slots-grid" id="eveningSlots">
+                <button class="slot-btn" data-time="04:30 PM">04:30 PM</button>
+                <button class="slot-btn" data-time="05:15 PM">05:15 PM</button>
+                <button class="slot-btn" data-time="06:00 PM">06:00 PM</button>
+                <button class="slot-btn" data-time="06:45 PM">06:45 PM</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Confirmation Summary -->
+          <div class="booking-col booking-summary-col">
+            <h4 class="booking-step-title">3. Appointment Summary</h4>
+            <div class="booking-summary-box">
+              <div class="summary-doctor">
+                <div class="doc-avatar">👨‍⚕️</div>
+                <div>
+                  <strong>Dr. S. Rao, BVSc</strong>
+                  <span>Senior Veterinary Surgeon • 12+ Yrs Exp</span>
+                  <span class="badge-vet">Verified Medical Director</span>
+                </div>
+              </div>
+
+              <div class="summary-details">
+                <div class="summary-line">
+                  <span>Selected Service:</span>
+                  <strong id="summaryServiceName">Comprehensive Health Check</strong>
+                </div>
+                <div class="summary-line">
+                  <span>Slot Time:</span>
+                  <strong id="summarySlotTime">Today, Oct 7 @ 09:30 AM</strong>
+                </div>
+                <div class="summary-line">
+                  <span>Patient Pet:</span>
+                  <strong>Bruno (Labrador, 28.4 kg)</strong>
+                </div>
+                <div class="summary-line fee-line">
+                  <span>Consultation Fee:</span>
+                  <strong class="total-fee" id="summaryServiceFee">₹499</strong>
+                </div>
+              </div>
+
+              <button class="btn-primary btn-block" id="confirmBookingBtn">Book Appointment Now →</button>
+              <p class="summary-micro">✓ Instant SMS & WhatsApp confirmation sent. Free cancellation up to 2 hours before.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: SALON GROOMING & SPA 🩷 -->
+    <section class="section-container" id="groomingSection">
+      <div class="grooming-banner">
+        <div class="grooming-content">
+          <div class="pastel-tag-grooming">🩷 Alphapetz Paws & Bubbles Spa</div>
+          <h3 class="grooming-title">Stress-Free Grooming & Medicated Spa Therapy</h3>
+          <p class="grooming-desc">From soothing de-shedding hydrotherapy to hypoallergenic oatmeal & chlorhexidine fungal baths. Handled with gentle, fear-free care.</p>
+          
+          <div class="grooming-packages-grid">
+            
+            <div class="grooming-card">
+              <span class="package-badge">Basic Freshness</span>
+              <h4>Hydrotherapy Bath & Dry</h4>
+              <p>Organic lavender shampoo, warm hydro-blowdry, ear cleaning & nail trim.</p>
+              <div class="package-price">₹699 <span>/ session</span></div>
+              <button class="btn-pastel-add" data-item="grooming-bath">Add to Cart 🛒</button>
+            </div>
+
+            <div class="grooming-card featured">
+              <span class="package-badge featured">Best Value 🩷</span>
+              <h4>Full Royal Makeover</h4>
+              <p>Breed-specific styling, sanitary trim, paw-pad balm massage, anti-tick dip, teeth brushing.</p>
+              <div class="package-price">₹1,299 <span>/ session</span></div>
+              <button class="btn-pastel-add" data-item="grooming-royal">Add to Cart 🛒</button>
+            </div>
+
+            <div class="grooming-card">
+              <span class="package-badge">Clinical Dermatology</span>
+              <h4>Medicated Antifungal Spa</h4>
+              <p>Prescription Ketoconazole/Chlorhexidine soak, gentle hot towel wrap, skin barrier serum.</p>
+              <div class="package-price">₹999 <span>/ session</span></div>
+              <button class="btn-pastel-add" data-item="grooming-medicated">Add to Cart 🛒</button>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PORTAL 1: CUSTOMER MOBILE -->
-    <section class="portal-section" id="portal-customer">
-      <div class="section-hero">
-        <div class="badge-pill">Mobile-First Web / PWA • 390px × 844px</div>
-        <h2>Customer Healthcare & Hyperlocal Commerce</h2>
-        <p>Consumer mobile interface featuring sticky location and pet identity switchers, clinical vaccination timelines, vet booking slot matrix, and 45-minute Rapido delivery tracking.</p>
-      </div>
-
-      <div class="screens-carousel-wrapper">
-        <div class="screen-tabs" id="customerTabs">
-          <button class="tab-chip active" data-screen="c1">Screen C1: Mobile Home & Pet Hub</button>
-          <button class="tab-chip" data-screen="c2">Screen C2: Vet & Grooming Slot Booking</button>
-          <button class="tab-chip" data-screen="c3">Screen C3: Digital Pet Passport & Medical Records</button>
-          <button class="tab-chip" data-screen="c4">Screen C4: Pet Food & Pharmacy Catalog</button>
-          <button class="tab-chip" data-screen="c5">Screen C5: Unified Checkout & Real-Time Tracking</button>
-        </div>
-
-        <div class="screen-display-panel">
-          <!-- Mobile Device Simulation Frame -->
-          <div class="device-column">
-            <div class="phone-frame">
-              <div class="phone-island"></div>
-              <div class="phone-screen">
-                <img id="customerImg" src="assets/c1_mobile.png" alt="PetPulse Screen Layout" class="screen-shot">
+    <!-- SECTION 4: DIGITAL PET PASSPORT & HEALTH HUB -->
+    <section class="section-container" id="passportSection">
+      <div class="passport-container">
+        
+        <div class="passport-card">
+          <div class="passport-header">
+            <div class="pet-hero-info">
+              <div class="pet-hero-avatar">🐕</div>
+              <div>
+                <h3 class="pet-hero-name">Bruno</h3>
+                <span class="pet-hero-sub">Male, Neutered • Labrador Retriever • 2 Years 3 Months</span>
               </div>
             </div>
-            <button class="expand-btn" id="expandCustomerBtn">🔍 Click to Expand Full Resolution</button>
+            <button class="btn-outline-small" id="editVitalsBtn">✏️ Edit Vitals</button>
           </div>
 
-          <!-- Screen Specification & Metadata Column -->
-          <div class="details-column" id="customerDetails">
-            <!-- Injected by JavaScript based on active screen -->
+          <div class="passport-vitals-row">
+            <div class="vital-badge">
+              <span class="vital-label">Weight</span>
+              <span class="vital-value">28.4 kg <span class="vital-tag ok">Healthy</span></span>
+            </div>
+            <div class="vital-badge">
+              <span class="vital-label">Blood Group</span>
+              <span class="vital-value">DEA 1.1+ (Donor Eligible)</span>
+            </div>
+            <div class="vital-badge">
+              <span class="vital-label">Microchip ID</span>
+              <span class="vital-value">#9810-TIR-4921</span>
+            </div>
+            <div class="vital-badge">
+              <span class="vital-label">Diet Requirement</span>
+              <span class="vital-value">Maxi Puppy Large Breed</span>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- PORTAL 2: STORE ADMIN -->
-    <section class="portal-section" id="portal-store-admin">
-      <div class="section-hero">
-        <div class="badge-pill">Desktop Operations • 1440px Viewport</div>
-        <h2>Store Admin Operations & Dispatch Center</h2>
-        <p>High-efficiency operations dashboard for store managers, supporting product catalog management, Cloudflare R2 media upload pipeline, inventory adjustments, and Rapido rider fulfillment.</p>
-      </div>
-
-      <div class="screens-carousel-wrapper">
-        <div class="screen-tabs" id="storeAdminTabs">
-          <button class="tab-chip active" data-screen="a1">Screen A1: Product Catalog (CRUD & Dual View)</button>
-          <button class="tab-chip" data-screen="a2">Screen A2: Product Creation & Editor</button>
-          <button class="tab-chip" data-screen="a3">Screen A3: Inventory Control & Stock Inwarding</button>
-          <button class="tab-chip" data-screen="a4">Screen A4: Orders & Delivery Dispatch Center</button>
-          <button class="tab-chip" data-screen="a5">Screen A5: Vet Doctor EHR & Consultation Desk</button>
-          <button class="tab-chip" data-screen="a6">Screen A6: Supplier Purchase Orders (PO) & GRN</button>
-        </div>
-
-        <div class="screen-display-panel desktop-mode">
-          <div class="desktop-frame">
-            <div class="browser-bar">
-              <div class="dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
+          <!-- Vaccination Timeline -->
+          <div class="timeline-container">
+            <h4 class="timeline-heading">💉 Verified Clinical Vaccination Compliance</h4>
+            
+            <div class="timeline-steps">
+              <div class="timeline-step urgent">
+                <div class="step-marker">⚠️</div>
+                <div class="step-content">
+                  <strong>Anti-Rabies Booster</strong>
+                  <span class="step-status">Due in 3 Days (Oct 10, 2026)</span>
+                  <span class="step-badge">Action Required</span>
+                </div>
               </div>
-              <div class="url-input">https://admin.petpulse.in/store/tirupati-main/products</div>
-            </div>
-            <div class="desktop-screen-content">
-              <img id="storeAdminImg" src="assets/a1_desktop.png" alt="Store Admin Screen" class="desktop-shot">
-            </div>
-          </div>
-          <button class="expand-btn" id="expandStoreBtn">🔍 Click to Expand Full Resolution</button>
 
-          <div class="details-column-full" id="storeAdminDetails">
-            <!-- Injected by JavaScript -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTAL 3: SUPER ADMIN -->
-    <section class="portal-section" id="portal-super-admin">
-      <div class="section-hero">
-        <div class="badge-pill">Executive BI & Governance • 1440px Viewport</div>
-        <h2>Super Admin Platform & Executive Intelligence</h2>
-        <p>Executive command center consolidating multi-branch GMV analytics, appointment distribution charts, stockout risk prediction, role-based governance, and immutable audit logging.</p>
-      </div>
-
-      <div class="screens-carousel-wrapper">
-        <div class="screen-tabs" id="superAdminTabs">
-          <button class="tab-chip active" data-screen="s1">Screen S1: Executive Analytics & BI Hub</button>
-          <button class="tab-chip" data-screen="s2">Screen S2: Store Admin Approvals & RBAC</button>
-          <button class="tab-chip" data-screen="s3">Screen S3: Master Inventory & Advanced Data Grid</button>
-          <button class="tab-chip" data-screen="s4">Screen S4: System Audit Logs & Operational Health</button>
-          <button class="tab-chip" data-screen="s5">Screen S5: Multi-Clinic Branch Governance Map</button>
-          <button class="tab-chip" data-screen="s6">Screen S6: Financial Settlements & Revenue Reconciliation</button>
-        </div>
-
-        <div class="screen-display-panel desktop-mode">
-          <div class="desktop-frame">
-            <div class="browser-bar">
-              <div class="dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
+              <div class="timeline-step verified">
+                <div class="step-marker">✓</div>
+                <div class="step-content">
+                  <strong>DHPPiL 7-in-1 Combined Vaccine</strong>
+                  <span class="step-status">Administered June 14, 2026 • Valid until June 2027</span>
+                  <a href="#" class="cert-link" onclick="alert('Digital Certificate verified by Tirupati Animal Health Board.'); return false;">📄 View Certificate PDF</a>
+                </div>
               </div>
-              <div class="url-input">https://super.petpulse.in/analytics/executive-command</div>
-            </div>
-            <div class="desktop-screen-content">
-              <img id="superAdminImg" src="assets/s1_desktop.png" alt="Super Admin Screen" class="desktop-shot">
-            </div>
-          </div>
-          <button class="expand-btn" id="expandSuperBtn">🔍 Click to Expand Full Resolution</button>
 
-          <div class="details-column-full" id="superAdminDetails">
-            <!-- Injected by JavaScript -->
-          </div>
-        </div>
-      </div>
-    </section>
+              <div class="timeline-step verified">
+                <div class="step-marker">✓</div>
+                <div class="step-content">
+                  <strong>Kennel Cough (Bordetella Intranasal)</strong>
+                  <span class="step-status">Administered August 02, 2026 • Active</span>
+                </div>
+              </div>
 
-    <!-- TOKENS & SYSTEM FOUNDATION -->
-    <section class="portal-section" id="portal-tokens">
-      <div class="section-hero">
-        <div class="badge-pill">Sea Breeze Palette • Veterinary & Pet Care Design Tokens</div>
-        <h2>Alphapetz Sea Breeze Design Tokens</h2>
-        <p>Clean, modern veterinary aesthetic balancing clinical reassurance with friendly pet warmth. Designed specifically for Alphapetz Pet Clinic.</p>
-      </div>
+              <div class="timeline-step upcoming">
+                <div class="step-marker">⏳</div>
+                <div class="step-content">
+                  <strong>Deworming Cycle (Drontal Plus)</strong>
+                  <span class="step-status">Scheduled for Nov 15, 2026 (In 5 weeks)</span>
+                </div>
+              </div>
+            </div>
 
-      <div class="tokens-grid">
-        <div class="token-card">
-          <h3>Sea Breeze Palette 🌊</h3>
-          <div class="swatch-list">
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#00796B;"></div>
-              <div><strong>Primary / Dark Teal:</strong> <code>#00796B</code> (Logo, Header, Primary Buttons)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#4DB6AC;"></div>
-              <div><strong>Main Teal:</strong> <code>#4DB6AC</code> (Accents, Focus Rings, Gradients)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#B2EBE2; border:1px solid #80CBC4;"></div>
-              <div><strong>Soft Secondary:</strong> <code>#B2EBE2</code> (Active Pills, Tags, Badges)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#E0F7FA; border:1px solid #B2EBE2;"></div>
-              <div><strong>Light Background:</strong> <code>#E0F7FA</code> (Sections, Feature Panels, Cards)</div>
-            </div>
           </div>
+
         </div>
 
-        <div class="token-card">
-          <h3>Structural & Canvas Colors</h3>
-          <div class="swatch-list">
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#023047;"></div>
-              <div><strong>Dark Text:</strong> <code>#023047</code> (Headings, Structural Typography)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#456272;"></div>
-              <div><strong>Muted Slate:</strong> <code>#456272</code> (Subtext, Timestamps, Captions)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#B2DFDB;"></div>
-              <div><strong>Teal Border:</strong> <code>#B2DFDB</code> (Card Outlines, Dividers, Inputs)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#FFFFFF; border:1px solid #B2DFDB;"></div>
-              <div><strong>White Canvas:</strong> <code>#FFFFFF</code> (Main App Background & Crisp Cards)</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="token-card">
-          <h3>Service Accents & Semantics</h3>
-          <div class="swatch-list">
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#FCE4EC; border:1px solid #F8BBD0;"></div>
-              <div><strong>Pastel Rose:</strong> <code>#FCE4EC</code> / <code>#AD1457</code> (Grooming Services 🩷)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#E0F2F1; border:1px solid #B2EBE2;"></div>
-              <div><strong>Boarding Pastel:</strong> <code>#E0F2F1</code> / <code>#00796B</code> (Pet Boarding & Daycare 🐾)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#F59E0B;"></div>
-              <div><strong>Upcoming Alert:</strong> <code>#F59E0B</code> (Booster Due ≤4d, Low Stock)</div>
-            </div>
-            <div class="swatch-item">
-              <div class="swatch-box" style="background:#E53935;"></div>
-              <div><strong>Critical Care:</strong> <code>#E53935</code> (Emergency, Urgent Vitals)</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="token-card">
-          <h3>Design Specifications</h3>
-          <div class="meta-list">
-            <div class="meta-item">
-              <strong>Headline Font:</strong> Plus Jakarta Sans (600, 700, 800)
-            </div>
-            <div class="meta-item">
-              <strong>Body & Microcopy:</strong> Inter (400, 500, 600)
-            </div>
-            <div class="meta-item">
-              <strong>Button Radii:</strong> <code>rounded-full</code> (Teal Pill Action Buttons)
-            </div>
-            <div class="meta-item">
-              <strong>Card Radii:</strong> <code>rounded-2xl</code> (Mobile) / <code>rounded-xl</code> (Desktop)
-            </div>
-            <div class="meta-item">
-              <strong>Palette Rating:</strong> 9/10 (Clean, modern veterinary/medical feel)
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- High-Res Zoom Modal -->
-  <div class="image-modal" id="imageModal">
-    <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-dialog">
-      <button class="modal-close-btn" id="modalCloseBtn">✕</button>
-      <div class="modal-body">
-        <h3 id="modalTitle" class="modal-title">Screen Preview</h3>
-        <div class="modal-img-container">
-          <img id="modalImg" src="" alt="Zoomed Screen">
+  <!-- SLIDING SHOPPING CART DRAWER -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <span>🛒 Your Shopping Cart</span>
+        <span class="cart-items-counter" id="cartItemsCountLabel">(0 items)</span>
+      </div>
+      <button class="cart-close-btn" id="closeCartBtn" aria-label="Close Cart">✕</button>
+    </div>
+
+    <!-- Free Delivery Progress Tracker -->
+    <div class="free-shipping-bar">
+      <div class="shipping-info-text" id="shippingProgressText">
+        Add <strong>₹499</strong> more for <strong>FREE 45-Min Express Delivery</strong>!
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scroll List -->
+    <div class="cart-items-list" id="cartItemsContainer">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Cart Footer & Calculations -->
+    <div class="cart-drawer-footer" id="cartFooter">
+      
+      <!-- Delivery Speed Option -->
+      <div class="delivery-speed-box">
+        <label class="delivery-option">
+          <input type="radio" name="deliverySpeed" value="express" checked id="deliveryExpressRadio">
+          <div class="option-content">
+            <span>⚡ <strong>45-Min Rapido Express</strong></span>
+            <span class="delivery-subtext">Direct from KT Road Clinic Hub</span>
+          </div>
+          <span class="delivery-cost" id="deliveryFeeLabel">₹49</span>
+        </label>
+      </div>
+
+      <!-- Promo Code Box -->
+      <div class="promo-box">
+        <input type="text" id="promoInput" placeholder="Enter coupon (e.g. SEABREEZE)" uppercase>
+        <button id="applyPromoBtn">Apply</button>
+      </div>
+      <div id="promoMessage" class="promo-msg"></div>
+
+      <!-- Price Breakdown -->
+      <div class="price-breakdown">
+        <div class="breakdown-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotalText">₹0</span>
         </div>
+        <div class="breakdown-row" id="discountRow" style="display: none;">
+          <span class="discount-label">Coupon Discount (10% OFF)</span>
+          <span class="discount-val" id="cartDiscountText">-₹0</span>
+        </div>
+        <div class="breakdown-row">
+          <span>Delivery Fee</span>
+          <span id="cartDeliveryText">₹49</span>
+        </div>
+        <div class="breakdown-row total-row">
+          <span>Total Amount</span>
+          <span id="cartGrandTotalText">₹0</span>
+        </div>
+      </div>
+
+      <!-- Checkout Action Button -->
+      <button class="btn-checkout" id="proceedToCheckoutBtn" disabled>
+        Proceed to Checkout →
+      </button>
+
+    </div>
+  </aside>
+
+  <!-- CHECKOUT & ORDER CONFIRMATION MODAL -->
+  <div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-modal-backdrop" id="checkoutBackdrop"></div>
+    <div class="checkout-dialog">
+      <button class="modal-close-btn" id="closeCheckoutBtn">✕</button>
+      
+      <div class="checkout-modal-body">
+        
+        <!-- Step 1: Form -->
+        <div id="checkoutFormStep">
+          <h3 class="modal-form-title">⚡ Express Delivery & Patient Information</h3>
+          <p class="modal-form-sub">Delivery dispatched from Tirupati Clinic within 15 minutes of confirmation.</p>
+
+          <form id="checkoutOrderForm" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="custName">Pet Parent Name *</label>
+                <input type="text" id="custName" placeholder="e.g. Trinadh V." required value="Trinadh">
+              </div>
+              <div class="form-group">
+                <label for="custPhone">Phone Number (For Live GPS OTP) *</label>
+                <input type="tel" id="custPhone" placeholder="10-digit mobile" required value="9849012345">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="custAddress">Street Address & House / Flat No. *</label>
+              <input type="text" id="custAddress" placeholder="e.g. Flat 302, Sri Krishna Apts, KT Road" required value="KT Road, Near Tirupati Animal Hospital">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="custLandmark">Landmark</label>
+                <input type="text" id="custLandmark" placeholder="e.g. Opposite Post Office" value="Opp. Apollo Pharmacy">
+              </div>
+              <div class="form-group">
+                <label for="custPin">Pincode *</label>
+                <input type="text" id="custPin" placeholder="517501" required value="517501">
+              </div>
+            </div>
+
+            <div class="payment-selection">
+              <label class="pay-title">Payment Method:</label>
+              <div class="pay-options-grid">
+                <label class="pay-radio selected">
+                  <input type="radio" name="payMethod" value="upi" checked>
+                  <span>⚡ Instant UPI (GPay / PhonePe / Paytm)</span>
+                </label>
+                <label class="pay-radio">
+                  <input type="radio" name="payMethod" value="cod">
+                  <span>💵 Cash / Pay on Delivery</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="checkout-action-row">
+              <div class="order-summary-chip">
+                <span>Total to Pay:</span>
+                <strong id="modalPayableTotal">₹0</strong>
+              </div>
+              <button type="submit" class="btn-primary btn-large" id="submitOrderBtn">
+                Confirm & Dispatch Order 🚀
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Step 2: Order Placed Success View -->
+        <div id="checkoutSuccessStep" style="display: none;" class="success-step">
+          <div class="success-icon">🎉</div>
+          <h3 class="success-title">Order Confirmed & Telemetry Active!</h3>
+          <p class="success-text">Your order has been forwarded to <strong>Alphapetz KT Road Clinic Pharmacy</strong>. Our dispatch partner has been allocated.</p>
+          
+          <div class="order-details-card">
+            <div class="order-detail-line">
+              <span>Order Reference ID:</span>
+              <strong id="successOrderId">ALP-849204</strong>
+            </div>
+            <div class="order-detail-line">
+              <span>Estimated Delivery:</span>
+              <strong class="text-teal">⚡ 35-45 Minutes</strong>
+            </div>
+            <div class="order-detail-line">
+              <span>Delivery Partner:</span>
+              <strong>Rapido Hyperlocal Fleet (#RAP-512)</strong>
+            </div>
+            <div class="order-detail-line">
+              <span>Payment Mode:</span>
+              <strong id="successPayMode">UPI (Verified)</strong>
+            </div>
+          </div>
+
+          <button class="btn-primary" id="returnToShopBtn">Continue Shopping 🐾</button>
+        </div>
+
       </div>
     </div>
   </div>
+
+  <!-- QUICK VIEW PRODUCT MODAL -->
+  <div class="quick-modal" id="quickModal">
+    <div class="quick-backdrop" id="quickBackdrop"></div>
+    <div class="quick-dialog">
+      <button class="modal-close-btn" id="closeQuickBtn">✕</button>
+      <div class="quick-body" id="quickModalContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- FOOTER -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      
+      <div class="footer-col brand-col">
+        <div class="brand-group">
+          <div class="brand-logo">🐾</div>
+          <div>
+            <h3 class="brand-title">Alphapetz</h3>
+            <span class="brand-badge">Pet Clinic & Hyperlocal Store</span>
+          </div>
+        </div>
+        <p class="footer-bio">Tirupati's premiere integrated veterinary healthcare institution. Delivering pharmaceuticals, premium nutrition, certified surgical care, and salon spa treatments with love.</p>
+        <div class="footer-color-swatch-badge">
+          <span>Sea Breeze Palette 🌊</span>
+          <span class="dot-swatch" style="background:#00796B;"></span>
+          <span class="dot-swatch" style="background:#4DB6AC;"></span>
+          <span class="dot-swatch" style="background:#B2EBE2;"></span>
+          <span class="dot-swatch" style="background:#E0F7FA;"></span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Healthcare & Services</h4>
+        <ul class="footer-links">
+          <li><a href="#vetBookingSection">In-Clinic Consultations</a></li>
+          <li><a href="#vetBookingSection">Emergency Trauma Care</a></li>
+          <li><a href="#groomingSection">Hydrotherapy & Spa 🩷</a></li>
+          <li><a href="#passportSection">Vaccine Immunity Passport</a></li>
+          <li><a href="#storeSection">Rx Pharmacy & Diets</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <ul class="footer-links">
+          <li><a href="#storeSection">45-Minute Delivery Terms</a></li>
+          <li><a href="#storeSection">Prescription Upload Guide</a></li>
+          <li><a href="#home">Returns & Refunds</a></li>
+          <li><a href="#home">Veterinarian Directory</a></li>
+          <li><a href="tel:+919849073877">🚨 24/7 ER Hotline</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col clinic-hours-col">
+        <h4>Clinic Location & Hours</h4>
+        <p class="clinic-addr">📍 18-3-42, KT Road, Near SVIMS Circle, Tirupati, Andhra Pradesh - 517501</p>
+        <div class="hours-badge">
+          <strong>Clinic Walk-in Hours:</strong>
+          <span>08:00 AM – 10:00 PM (Mon - Sun)</span>
+          <strong class="text-teal">Emergency Trauma Center: 24/7 Active</strong>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>© 2026 Alphapetz Animal Health & Commerce Ltd. All rights reserved.</p>
+        <p class="built-with">Built with Google Antigravity & the Sea Breeze Design System.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>
